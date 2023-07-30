@@ -1,14 +1,21 @@
 var imageToHide = 3;
 var recipeAnswer;
 var allowedWrongAnswers = 2;
+var recipeNumber = 1;
+var recipeDescription;
+var recipeScore;
+var score = 1000;
 var x = 0;
 
 
 
-function loadImages(x, imageToHide) {
+function loadGame(x, imageToHide) {
+    document.getElementById("quizz_name").innerHTML = "#" + recipeNumber + " Recipe quizz";
     $.getJSON("datafile/recipes.json", function (data) {
         jsonImages = data.recipes[x].ingredients;
         recipeAnswer = data.recipes[x].name;
+        recipeDescription = data.recipes[x].description;
+        recipeScore = data.recipes[x].score;
 
         imageToLoad = jsonImages.length - imageToHide;
         imageEmpty = jsonImages.length - imageToLoad;
@@ -34,7 +41,6 @@ function loadImages(x, imageToHide) {
 }
 
 function revealImages() {
-    console.log("Reveal images");
     removeAllChildNodes(document.getElementById('images'));
 
     imageToHide--;
@@ -43,7 +49,10 @@ function revealImages() {
         imageToHide = 0;
         console.log("No more images to load");
     }
-    loadImages(x, imageToHide);
+    else {
+        updateScore(-50);
+    }
+    loadGame(x, imageToHide);
 }
 
 
@@ -51,23 +60,29 @@ function validateAnswer() {
     var input = document.querySelector('input');
     var userAnswer = input.value;
 
-    if (recipeAnswer == userAnswer) {
-        console.log("You won!");
-        input.style.backgroundColor="#e3fbe3";
-        input.style.border="2px solid green";
-        nextQuestion();
+    if (userAnswer.length == 0) {
+        console.log("No anwser")
     }
     else {
-        console.log("Wrong answer ...");
-        input.style.backgroundColor="#ffcccb";
-        input.style.border="2px solid red";
-        allowedWrongAnswers--;
-        console.log(allowedWrongAnswers + " remaining");
-        dislayErrors();
-
-        if (allowedWrongAnswers < 0 ) {
-            disableElement('validateButton');
+        if (recipeAnswer.toLowerCase() == userAnswer.toLowerCase()) {
+            console.log("You won!");
+            input.style.backgroundColor="#e3fbe3";
+            input.style.border="2px solid green";
+            updateScore(recipeScore);
             nextQuestion();
+        }
+        else {
+            console.log("Wrong answer ...");
+            input.style.backgroundColor="#ffcccb";
+            input.style.border="2px solid red";
+            allowedWrongAnswers--;
+            console.log(allowedWrongAnswers + " remaining");
+            dislayErrors();
+
+            if (allowedWrongAnswers < 0 ) {
+                disableElement('validateButton');
+                nextQuestion();
+            }
         }
     }
 }
@@ -79,15 +94,9 @@ function dislayErrors() {
     document.getElementById('red_cross').appendChild(img);
 }
 
-function eventLoader() {
-    $("#answer").keypress(function(event) {
-        if (event.key === "Enter") {
-            $("#validateButton").click();
-        }
-    });
-}
-
 async function nextQuestion() {
+    document.getElementById('revealed_answer').innerHTML = recipeAnswer + " +" + recipeScore + "Pts !";
+
     await sleep(2000);
 
     var input = document.querySelector('input');
@@ -100,10 +109,43 @@ async function nextQuestion() {
     imageToHide = 3;
     allowedWrongAnswers = 2;
     enableElement('validateButton')
-
+    recipeNumber++;
+    document.getElementById('description_text').innerHTML = "";
+    document.getElementById('revealed_answer').innerHTML = "";
     x++;
-    console.log("Load recipe: " + x)
-    loadImages(x, imageToHide);
+
+    if (x == 2) {
+        console.log("End of the game");
+    }
+    else {
+        loadGame(x, imageToHide);
+    }
+    
+}
+
+function revealDescription() {
+    description = document.getElementById('description_text').innerHTML;
+
+    if (description == "") {
+        document.getElementById('description_text').innerHTML = recipeDescription;
+        updateScore(-100);
+    }    
+}
+
+async function updateScore(amount) {
+    score = score + amount;
+    document.getElementById('score_text').innerHTML = "Score : " + score;
+
+    if (amount > 0) {
+        document.getElementById('score_text').style.color = "green";
+        await sleep(2000);
+    }
+    else {
+        document.getElementById('score_text').style.color = "red";
+        await sleep(2000);
+    }
+    
+    document.getElementById('score_text').style.color = "black";
 }
 
 function sleep(ms) {
@@ -124,13 +166,22 @@ function disableElement(id) {
     document.getElementById(id).disabled = 'disable';
 }
 
+function eventLoader() {
+    $("#answer").keypress(function(event) {
+        if (event.key === "Enter") {
+            $("#validateButton").click();
+        }
+    });
+}
+
+
 function main() {
 
     window.onload = function() {
         eventLoader();
     };
 
-    loadImages(0, imageToHide);
+    loadGame(0, imageToHide);
 }
 
 

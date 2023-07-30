@@ -9,7 +9,7 @@
 <body>
 
 <div class="app">
-    <h1>Recipe quizz</h1>
+    <h1 id="quizz_name">Recipe quizz</h1>
     <div class="quizz">
         <h2 id="question">Quelle est cette recette ?</h2>
     </div>
@@ -17,21 +17,30 @@
         <script type="text/javascript" src="image-loader.js"></script>
     </div>
 
+    <div class="description">
+        <h3 id="description_text"></h3>
+    </div>
+
     <div class="inputText">
         <input type="text" id="answer" name="answer" placeholder="Search..">
+        <center><h3 id="revealed_answer"></h3></center>
+        <h2 id="score_text">Score : 1000</h2>
     </div>
+
 
     <div id="answer_button">
         <input type="button" class="validateButton" id="validateButton" value="Valider la réponse" onclick="validateAnswer()"></input>
     </div>
 
-    <div id="red_cross" class="red_cross">
-    </div>
+    <div id="red_cross" class="red_cross"></div>
 </div>
 
 <div class="buttons">
     <div id="bonus_buttons">
-        <a class="pictureButton" onclick="revealImages()"> Ajouter des photos </a>
+        <a class="pictureButton" onclick="revealImages()"> Ajouter des photos | -50 </a>
+    </div>
+    <div id="bonus_buttons">
+        <a class="descriptionButton" onclick="revealDescription()"> Description | -100 </a>
     </div>
 </div>
 

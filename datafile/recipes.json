@@ -1,24 +1,28 @@
 {
     "recipes": [
         {
-            "name": "lasagne",
+            "name": "Lasagne",
             "ingredients": [
                 "minced_meat",
                 "farine",
                 "farine",
                 "farine",
                 "farine"
-            ]
+            ],
+            "description": "Plat italien typique et préféré de Tounch",
+            "score": 100
         },
         {
-            "name": "carbonara",
+            "name": "Carbonara",
             "ingredients": [
                 "egg",
                 "farine",
                 "farine",
                 "farine",
                 "farine"
-            ]
+            ],
+            "description": "Personne n'est jamais d'accord sur les ingrédients exact de cette recette",
+            "score": 250
         }
     ]
 }
