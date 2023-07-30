@@ -1,0 +1,24 @@
+{
+    "recipes": [
+        {
+            "name": "lasagne",
+            "ingredients": [
+                "minced_meat",
+                "farine",
+                "farine",
+                "farine",
+                "farine"
+            ]
+        },
+        {
+            "name": "carbonara",
+            "ingredients": [
+                "egg",
+                "farine",
+                "farine",
+                "farine",
+                "farine"
+            ]
+        }
+    ]
+}
