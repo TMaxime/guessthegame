@@ -1,4 +1,4 @@
-var imageToHide = 3;
+var imageToHide = 5;
 var recipeAnswer;
 var allowedWrongAnswers = 2;
 var recipeNumber = 1;
@@ -11,6 +11,8 @@ var x = 0;
 
 function loadGame(x, imageToHide) {
     document.getElementById("quizz_name").innerHTML = "#" + recipeNumber + " Recipe quizz";
+    console.log(imageToHide);
+    
     $.getJSON("datafile/recipes.json", function (data) {
         jsonImages = data.recipes[x].ingredients;
         recipeAnswer = data.recipes[x].name;
@@ -20,13 +22,12 @@ function loadGame(x, imageToHide) {
         imageToLoad = jsonImages.length - imageToHide;
         imageEmpty = jsonImages.length - imageToLoad;
 
-        if (imageToHide < 0) {
-            imageToHide = 0;
-        }
+        document.getElementById("question").innerHTML = "Quelle est cette recette ? (" + recipeScore + "pts)";
 
         for (let y = 0; y < imageToLoad; y++) {
             let img = document.createElement('img');
             img.setAttribute("class", "img");
+            img.setAttribute("title", jsonImages[y]);
             img.src = "images/"+ jsonImages[y] + ".jpg";
             document.getElementById('images').appendChild(img);
         }
@@ -68,6 +69,7 @@ function validateAnswer() {
             console.log("You won!");
             input.style.backgroundColor="#e3fbe3";
             input.style.border="2px solid green";
+            disableElement('validateButton');
             updateScore(recipeScore);
             nextQuestion(true);
         }
@@ -111,7 +113,7 @@ async function nextQuestion(victory) {
     
     removeAllChildNodes(document.getElementById('images'));
     removeAllChildNodes(document.getElementById('red_cross'));
-    imageToHide = 3;
+    imageToHide = 5;
     allowedWrongAnswers = 2;
     enableElement('validateButton')
     recipeNumber++;
@@ -119,7 +121,7 @@ async function nextQuestion(victory) {
     document.getElementById('revealed_answer').innerHTML = "";
     x++;
 
-    if (x == 2) {
+    if (x == 8) {
         console.log("End of the game");
     }
     else {

@@ -1,13 +1,78 @@
 {
     "recipes": [
         {
+            "name": "Velouté de potimarron",
+            "ingredients": [
+                "creme_fraiche",
+                "beurre",
+                "potimarron",
+                "poivre",
+                "huile_olive",
+                "marrons",
+                "ail"
+            ],
+            "description": "Un velouté réconfortant",
+            "score": 200
+        },
+        {
+            "name": "Blanquette de veau",
+            "ingredients": [
+                "farine",
+                "poivre",
+                "champignon",
+                "creme_fraiche",
+                "jaune_oeuf",
+                "veau",
+                "vin_blanc",
+                "carotte",
+                "bouillon_boeuf",
+                "oignon"                
+            ],
+            "description": "Un dessert de nuage gourmand",
+            "score": 200
+        },
+        {
+            "name": "Ile flottante",
+            "ingredients": [
+                "vanille",
+                "sucre",
+                "oeuf",
+                "lait",
+                "amande",
+                "sel"
+            ],
+            "description": "Un dessert de nuage gourmand",
+            "score": 150
+        },
+        {
+            "name": "Chili con carne",
+            "ingredients": [
+                "boeuf_hache",
+                "persil",
+                "puree_de_tomate",
+                "haricot_rouge",
+                "oignon",
+                "bouillon_boeuf",
+                "ail",
+                "cumin",
+                "chili_poudre"
+            ],
+            "description": "Le dernier que j'ai mangé ça s'est ... mal passé ... #chiasse",
+            "score": 150
+        },
+        {
             "name": "Lasagne",
             "ingredients": [
-                "minced_meat",
-                "farine",
-                "farine",
-                "farine",
-                "farine"
+                "boeuf_hache",
+                "puree_de_tomate",
+                "oignon",
+                "carotte",
+                "ail",
+                "lait",
+                "vin_rouge",
+                "parmesan",
+                "fromage_rape",
+                "lasagne"
             ],
             "description": "Plat italien typique et préféré de Tounch",
             "score": 100
@@ -15,11 +80,13 @@
         {
             "name": "Carbonara",
             "ingredients": [
-                "egg",
+                "oeuf",
                 "farine",
-                "farine",
-                "farine",
-                "farine"
+                "poitrine_porc",
+                "jaune_oeuf",
+                "pecorino",
+                "poivre",
+                "huile_olive"
             ],
             "description": "Personne n'est jamais d'accord sur les ingrédients exact de cette recette",
             "score": 250
