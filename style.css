@@ -32,7 +32,8 @@ body {
 }
 
 .images img {
-    max-width : 15%;
+    width: 200px;
+    border-radius: 4px;
 }
 
 .red_cross {
@@ -93,6 +94,33 @@ body {
     background-color: orange;
 }
 .descriptionButton:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+}
+
+.backHome {
+    background-color: #ff0000;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    margin: 1%;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.backHome:hover {
+    background-color: rgb(134, 35, 35);
+}
+.backHome:active {
     box-shadow: #422800 2px 2px 0 0;
     transform: translate(2px, 2px);
 }
@@ -168,4 +196,66 @@ body {
 .validateButton:active {
     background-color: #298e46;
     box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+
+.game_buttons a {
+    appearance: none;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 60px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #2b2db4;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 24px;
+    font-weight: bolder;
+    line-height: 200px;
+    padding: 100px 100px;
+    margin: 2%;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.game_buttons:focus:not(:focus-visible):not(.focus-visible) a {
+    box-shadow: none;
+    outline: none;
+}
+
+.game_buttons:disabled a {
+    background-color: #94d3a2;
+    border-color: rgba(27, 31, 35, .1);
+    color: rgba(255, 255, 255, .8);
+    cursor: default;
+}
+
+.recipe_Button {
+    background-size: cover;
+    background-image: url('images/cuisine.jpg');
+    opacity: 0.9;
+}
+
+.recipe_Button:hover {
+    background-size: cover;
+    background-image: url('images/cuisine.jpg');
+    opacity: 0.8;
+}
+
+.movie_Button {
+    background-size: cover;
+    background-image: url('images/movie.jpg');
+    opacity: 0.9;
+}
+
+.movie_Button:hover {
+    background-size: cover;
+    background-image: url('images/movie.jpg');
+    opacity: 0.8;
 }

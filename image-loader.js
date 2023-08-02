@@ -69,7 +69,7 @@ function validateAnswer() {
             input.style.backgroundColor="#e3fbe3";
             input.style.border="2px solid green";
             updateScore(recipeScore);
-            nextQuestion();
+            nextQuestion(true);
         }
         else {
             console.log("Wrong answer ...");
@@ -81,7 +81,7 @@ function validateAnswer() {
 
             if (allowedWrongAnswers < 0 ) {
                 disableElement('validateButton');
-                nextQuestion();
+                nextQuestion(false);
             }
         }
     }
@@ -94,9 +94,14 @@ function dislayErrors() {
     document.getElementById('red_cross').appendChild(img);
 }
 
-async function nextQuestion() {
-    document.getElementById('revealed_answer').innerHTML = recipeAnswer + " +" + recipeScore + "Pts !";
-
+async function nextQuestion(victory) {
+    if (victory == true) {
+        document.getElementById('revealed_answer').innerHTML = recipeAnswer + " +" + recipeScore + "Pts !";
+    }
+    else {
+        document.getElementById('revealed_answer').innerHTML = recipeAnswer;
+    }
+    
     await sleep(2000);
 
     var input = document.querySelector('input');
@@ -120,7 +125,6 @@ async function nextQuestion() {
     else {
         loadGame(x, imageToHide);
     }
-    
 }
 
 function revealDescription() {
