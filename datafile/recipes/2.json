@@ -1,0 +1,99 @@
+{
+    "recipes": [
+        {
+            "possible_answers": [
+                "Blanquette de veau",
+                "Blanquette"
+            ],
+            "ingredients": [
+                "farine",
+                "poivre",
+                "champignon",
+                "creme_fraiche",
+                "jaune_oeuf",
+                "veau",
+                "vin_blanc",
+                "carotte",
+                "bouillon_boeuf",
+                "oignon"                
+            ],
+            "description": "Un dessert de nuage gourmand",
+            "score": 200
+        },
+        {
+            "possible_answers": [
+                "Ile flottante"
+            ],
+            "ingredients": [
+                "vanille",
+                "sucre",
+                "oeuf",
+                "lait",
+                "amande",
+                "sel"
+            ],
+            "description": "Un dessert de nuage gourmand",
+            "score": 150
+        },
+        {
+            "possible_answers": [
+                "Chili con carne",
+                "Chili"
+            ],
+            "ingredients": [
+                "boeuf_hache",
+                "persil",
+                "puree_de_tomate",
+                "haricot_rouge",
+                "oignon",
+                "bouillon_boeuf",
+                "ail",
+                "cumin",
+                "chili_poudre"
+            ],
+            "description": "Le dernier que j'ai mangé ça s'est ... mal passé ... #chiasse",
+            "score": 150
+        },
+        {
+            "possible_answers": [
+                "Lasagne",
+                "Lasagne de boeuf"
+            ],
+            "ingredients": [
+                "boeuf_hache",
+                "puree_de_tomate",
+                "oignon",
+                "carotte",
+                "ail",
+                "lait",
+                "vin_rouge",
+                "parmesan",
+                "fromage_rape",
+                "lasagne"
+            ],
+            "description": "Plat italien typique et préféré de Tounch",
+            "score": 100
+        },
+        {
+            "possible_answers": [
+                "Pate carbonara",
+                "Pates carbonara",
+                "Pate carbo",
+                "Pates carbo",
+                "Carbonara",
+                "Carbo"
+            ],
+            "ingredients": [
+                "oeuf",
+                "farine",
+                "poitrine_porc",
+                "jaune_oeuf",
+                "pecorino",
+                "poivre",
+                "huile_olive"
+            ],
+            "description": "Personne n'est jamais d'accord sur les ingrédients exacts de cette recette",
+            "score": 250
+        }
+    ]
+}

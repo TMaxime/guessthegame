@@ -4,16 +4,16 @@ var allowedWrongAnswers = 2;
 var recipeNumber = 1;
 var recipeDescription;
 var recipeScore;
+var gamePool;
 var score = 1000;
 var x = 0;
 
 
 
-function loadGame(x, imageToHide) {
+function loadGame(x, imageToHide, gamePool) {
     document.getElementById("quizz_name").innerHTML = "#" + recipeNumber + " Recipe quizz";
-    console.log(imageToHide);
     
-    $.getJSON("datafile/recipes.json", function (data) {
+    $.getJSON("datafile/recipes/"+gamePool+".json", function (data) {
         jsonImages = data.recipes[x].ingredients;
         recipeAnswer = data.recipes[x].possible_answers;
         recipeDescription = data.recipes[x].description;
@@ -53,7 +53,7 @@ function revealImages() {
     else {
         updateScore(-50);
     }
-    loadGame(x, imageToHide);
+    loadGame(x, imageToHide, gamePool);
 }
 
 
@@ -125,7 +125,7 @@ async function nextQuestion(victory) {
         console.log("End of the game");
     }
     else {
-        loadGame(x, imageToHide);
+        loadGame(x, imageToHide, gamePool);
     }
 }
 
@@ -195,8 +195,11 @@ function main() {
     window.onload = function() {
         eventLoader();
     };
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    gamePool = urlParams.get('pool');
 
-    loadGame(0, imageToHide);
+    loadGame(0, imageToHide, gamePool);
 }
 
 
