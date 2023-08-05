@@ -105,7 +105,7 @@ body {
 }
 
 .backHome {
-    background-color: #ff0000;
+    background-color: #e75757;
     border: 2px solid #422800;
     border-radius: 30px;
     box-shadow: #422800 4px 4px 0 0;
@@ -295,3 +295,18 @@ body {
 .recipe_sub_button:hover {
     background-color: #c9696e;
 }
+
+.final_score {
+    font-size: 150px;
+    color: #001e4d;
+}
+
+.final_score {
+    animation: blinker 1s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }

@@ -11,7 +11,7 @@ var x = 0;
 
 
 function loadGame(x, imageToHide, gamePool) {
-    document.getElementById("quizz_name").innerHTML = "#" + recipeNumber + " Recipe quizz";
+    document.getElementById("quizz_name").innerHTML = "#" + recipeNumber + "/10 Recipe quizz";
     
     $.getJSON("datafile/recipes/"+gamePool+".json", function (data) {
         jsonImages = data.recipes[x].ingredients;
@@ -121,8 +121,9 @@ async function nextQuestion(victory) {
     document.getElementById('revealed_answer').innerHTML = "";
     x++;
 
-    if (x == 8) {
+    if (x == 1) {
         console.log("End of the game");
+        getToScorePage(score);
     }
     else {
         loadGame(x, imageToHide, gamePool);
@@ -188,6 +189,10 @@ function cleanString(string) {
         string = string.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
     }
     return string;
+}
+
+function getToScorePage(score) {
+    window.location.href = "./highscore.html?score="+score;
 }
 
 

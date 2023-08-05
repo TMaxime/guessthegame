@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guess the ...</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+
+
+<div class="app">
+    <h1 id="quizz_name">Well done, your score is : </h1>
+    <div class="score">
+        <center><h2 class="final_score" id="final_score"></h2></center>
+    </div>
+
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        score = urlParams.get('score');
+
+        console.log(score);
+        document.getElementById("final_score").innerHTML = score;
+    </script>
+</div>
+
+<div class="buttons">
+    <div id="bonus_buttons">
+        <a class="backHome" onclick="window.location.href='./index.html';"> Retour menu </a>
+    </div>
+</div>
+
+</body>
+</html>
