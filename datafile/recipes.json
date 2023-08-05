@@ -1,7 +1,11 @@
 {
     "recipes": [
         {
-            "name": "Velouté de potimarron",
+            "possible_answers": [
+                "Velouté de potimarron",
+                "Soupe de potimarron",
+                "Potimarron"
+            ],
             "ingredients": [
                 "creme_fraiche",
                 "beurre",
@@ -15,7 +19,10 @@
             "score": 200
         },
         {
-            "name": "Blanquette de veau",
+            "possible_answers": [
+                "Blanquette de veau",
+                "Blanquette"
+            ],
             "ingredients": [
                 "farine",
                 "poivre",
@@ -32,7 +39,9 @@
             "score": 200
         },
         {
-            "name": "Ile flottante",
+            "possible_answers": [
+                "Ile flottante"
+            ],
             "ingredients": [
                 "vanille",
                 "sucre",
@@ -45,7 +54,10 @@
             "score": 150
         },
         {
-            "name": "Chili con carne",
+            "possible_answers": [
+                "Chili con carne",
+                "Chili"
+            ],
             "ingredients": [
                 "boeuf_hache",
                 "persil",
@@ -61,7 +73,10 @@
             "score": 150
         },
         {
-            "name": "Lasagne",
+            "possible_answers": [
+                "Lasagne",
+                "Lasagne de boeuf"
+            ],
             "ingredients": [
                 "boeuf_hache",
                 "puree_de_tomate",
@@ -78,7 +93,14 @@
             "score": 100
         },
         {
-            "name": "Carbonara",
+            "possible_answers": [
+                "Pate carbonara",
+                "Pates carbonara",
+                "Pate carbo",
+                "Pates carbo",
+                "Carbonara",
+                "Carbo"
+            ],
             "ingredients": [
                 "oeuf",
                 "farine",
@@ -88,7 +110,7 @@
                 "poivre",
                 "huile_olive"
             ],
-            "description": "Personne n'est jamais d'accord sur les ingrédients exact de cette recette",
+            "description": "Personne n'est jamais d'accord sur les ingrédients exacts de cette recette",
             "score": 250
         }
     ]

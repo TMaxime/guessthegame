@@ -15,7 +15,7 @@ function loadGame(x, imageToHide) {
     
     $.getJSON("datafile/recipes.json", function (data) {
         jsonImages = data.recipes[x].ingredients;
-        recipeAnswer = data.recipes[x].name;
+        recipeAnswer = data.recipes[x].possible_answers;
         recipeDescription = data.recipes[x].description;
         recipeScore = data.recipes[x].score;
 
@@ -65,7 +65,7 @@ function validateAnswer() {
         console.log("No anwser")
     }
     else {
-        if (recipeAnswer.toLowerCase() == userAnswer.toLowerCase()) {
+        if (cleanString(recipeAnswer).includes(cleanString(userAnswer))) {
             console.log("You won!");
             input.style.backgroundColor="#e3fbe3";
             input.style.border="2px solid green";
@@ -98,10 +98,10 @@ function dislayErrors() {
 
 async function nextQuestion(victory) {
     if (victory == true) {
-        document.getElementById('revealed_answer').innerHTML = recipeAnswer + " +" + recipeScore + "Pts !";
+        document.getElementById('revealed_answer').innerHTML = recipeAnswer[0] + " +" + recipeScore + "Pts !";
     }
     else {
-        document.getElementById('revealed_answer').innerHTML = recipeAnswer;
+        document.getElementById('revealed_answer').innerHTML = recipeAnswer[0];
     }
     
     await sleep(2000);
@@ -180,9 +180,18 @@ function eventLoader() {
     });
 }
 
+function cleanString(string) {
+    if (Array.isArray(string)) {
+        string = string.map(item => item.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ''));
+    }
+    else {
+        string = string.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    }
+    return string;
+}
+
 
 function main() {
-
     window.onload = function() {
         eventLoader();
     };
