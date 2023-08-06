@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guess the ...</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+
+
+<div class="app">
+    <h1 id="quizz_name">All time highscore : </h1>
+    <div class="score">
+        <table id="highscore_table">
+            <tr>
+                <th class="global_highscore" id="global_highscore">Username</th>
+                <th class="global_highscore" id="global_highscore">Score</th>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        $.getJSON("datafile/highscore.json", function (data) {
+            for (let i = 0; i < 10; i++) {
+                let tr = document.createElement('tr');
+                tr.setAttribute("id", "global_highscore_row_"+i);
+                document.getElementById('highscore_table').appendChild(tr);
+
+                let tdUsername = document.createElement('td');
+                tdUsername.setAttribute("id", "global_highscore_username_"+i);
+                let tdScore = document.createElement('td');
+                tdScore.setAttribute("id", "global_highscore_score_"+i);
+                document.getElementById('global_highscore_row_'+i).appendChild(tdUsername);
+                document.getElementById('global_highscore_row_'+i).appendChild(tdScore);
+
+                let username = data.recipe[i].username;
+                let score = data.recipe[i].score;
+
+                document.getElementById("global_highscore_username_"+i).innerHTML = username;
+                document.getElementById("global_highscore_score_"+i).innerHTML = score;
+            }
+        });
+    </script>
+
+</div>
+
+<div class="buttons">
+    <div id="bonus_buttons">
+        <a class="backHome" onclick="window.location.href='./';"> Retour menu </a>
+    </div>
+</div>
+
+</body>
+</html>

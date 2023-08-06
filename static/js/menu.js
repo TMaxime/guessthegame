@@ -11,7 +11,11 @@ function displayRecipeSubMenu() {
 }
 
 function moveToGameWindow(pool) {
-    window.location.href = "./recipe-game.html?pool="+pool;
+    let username = document.getElementById('username').value;
+    if (username == "") {
+        username = "anonymous";
+    }
+    window.location.href = "./recipe-game.html?pool="+pool+"&username="+username;
 }
 
 function main() {

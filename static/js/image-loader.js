@@ -5,6 +5,7 @@ var recipeNumber = 1;
 var recipeDescription;
 var recipeScore;
 var gamePool;
+var username;
 var score = 1000;
 var x = 0;
 
@@ -192,7 +193,7 @@ function cleanString(string) {
 }
 
 function getToScorePage(score) {
-    window.location.href = "./highscore.html?score="+score;
+    window.location.href = "./highscore.html?score="+score+"&username="+username;
 }
 
 
@@ -203,6 +204,7 @@ function main() {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     gamePool = urlParams.get('pool');
+    username = urlParams.get('username');
 
     loadGame(0, imageToHide, gamePool);
 }

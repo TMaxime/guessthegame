@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Guess the ...</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 
@@ -10,7 +10,7 @@
 
 <div class="app">
     <h1 id="quizz_name">Choose your quizz : </h1>
-    <script type="text/javascript" src="menu.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
     <div class="game_buttons">
         <a class="recipe_Button" onclick="displayRecipeSubMenu()"></a>
         <a class="movie_Button"></a>
@@ -18,9 +18,15 @@
     <div class="recipe_sub_buttons" id="recipe_sub_buttons"></div>
     <div class="movie_sub_buttons" id="movie_sub_buttons"></div>
 
-<!--    <div class="inputText">
+    <div class="inputText">
         <input type="text" id="username" name="username" placeholder="Username..">
-    </div> -->
+    </div>
+</div>
+
+<div class="buttons">
+    <div id="bonus_buttons">
+        <a class="globalHighscore" onclick="window.location.href='./global_highscore.html';"> Highscore </a>
+    </div>
 </div>
 
 </body>
