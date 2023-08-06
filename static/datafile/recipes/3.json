@@ -2,6 +2,78 @@
     "recipes": [
         {
             "possible_answers": [
+                "Gratin dauphinois",
+                "Gratins dauphinois"
+            ],
+            "ingredients": [
+                "lait",
+                "beurre",
+                "ail",
+                "creme_fraiche",
+                "patate",
+                "poivre",
+                "muscade",
+                "sel"
+            ],
+            "description": "Plat de patate par excellence.",
+            "score": 150
+        },
+        {
+            "possible_answers": [
+                "Gougères au fromage",
+                "Gougère au fromage",
+                "Gougère",
+                "Gougères"
+            ],
+            "ingredients": [
+                "fromage_rape",
+                "farine",
+                "oeuf",
+                "sel",
+                "poivre",
+                "muscade"
+            ],
+            "description": "Amuse bouche, parfait pour l'apéro.",
+            "score": 250
+        },
+        {
+            "possible_answers": [
+                "Moule marinière",
+                "Moules marinières",
+                "Moules marinière"
+            ],
+            "ingredients": [
+                "oignon",
+                "persil",
+                "beurre",
+                "farine",
+                "moule",
+                "ail",
+                "vin_blanc",
+                "citron"
+            ],
+            "description": "Un bon plat d'été à déguster en terrace en bord de mer.",
+            "score": 200
+        },
+        {
+            "possible_answers": [
+                "Gateau au yaourt",
+                "Gateau de yaourt"
+            ],
+            "ingredients": [
+                "levure",
+                "vanille",
+                "farine",
+                "beurre",
+                "oeuf",
+                "yaourt",
+                "sucre"
+            ],
+            "description": "Un gateau basique, simple.",
+            "score": 200
+        },
+        {
+            "possible_answers": [
                 "Velouté de potimarron",
                 "Soupe de potimarron",
                 "Potimarron"
@@ -15,7 +87,7 @@
                 "marrons",
                 "ail"
             ],
-            "description": "Un velouté réconfortant",
+            "description": "Un velouté réconfortant.",
             "score": 200
         },
         {
@@ -35,8 +107,8 @@
                 "bouillon_boeuf",
                 "oignon"                
             ],
-            "description": "Un dessert de nuage gourmand",
-            "score": 200
+            "description": "Classique de la cuisine française.",
+            "score": 250
         },
         {
             "possible_answers": [
@@ -50,7 +122,7 @@
                 "amande",
                 "sel"
             ],
-            "description": "Un dessert de nuage gourmand",
+            "description": "Un dessert de nuage gourmand.",
             "score": 150
         },
         {
@@ -69,28 +141,8 @@
                 "cumin",
                 "chili_poudre"
             ],
-            "description": "Le dernier que j'ai mangé ça s'est ... mal passé ... #chiasse",
+            "description": "Le dernier que j'ai mangé ça s'est ... mal passé ... #chiasse.",
             "score": 150
-        },
-        {
-            "possible_answers": [
-                "Lasagne",
-                "Lasagne de boeuf"
-            ],
-            "ingredients": [
-                "boeuf_hache",
-                "puree_de_tomate",
-                "oignon",
-                "carotte",
-                "ail",
-                "lait",
-                "vin_rouge",
-                "parmesan",
-                "fromage_rape",
-                "lasagne"
-            ],
-            "description": "Plat italien typique et préféré de Tounch",
-            "score": 100
         },
         {
             "possible_answers": [
@@ -110,7 +162,26 @@
                 "poivre",
                 "huile_olive"
             ],
-            "description": "Personne n'est jamais d'accord sur les ingrédients exacts de cette recette",
+            "description": "Personne n'est jamais d'accord sur les ingrédients exacts de cette recette.",
+            "score": 150
+        },
+        {
+            "possible_answers": [
+                "Veau marengo",
+                "Veau maringo"
+            ],
+            "ingredients": [
+                "carotte",
+                "farine",
+                "veau",
+                "echalote",
+                "tomate",
+                "champignon",
+                "beurre",
+                "ail",
+                "vin_blanc"
+            ],
+            "description": "Un plat inventé un soir de bataille pour Napoléon Bonaparte. Déso ça vous aide probablement pas ...",
             "score": 250
         }
     ]

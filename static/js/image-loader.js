@@ -122,7 +122,7 @@ async function nextQuestion(victory) {
     document.getElementById('revealed_answer').innerHTML = "";
     x++;
 
-    if (x == 1) {
+    if (x == 10) {
         console.log("End of the game");
         getToScorePage(score);
     }

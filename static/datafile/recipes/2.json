@@ -2,57 +2,134 @@
     "recipes": [
         {
             "possible_answers": [
-                "Blanquette de veau",
-                "Blanquette"
+                "Hachis parmentier",
+                "Hachis"
             ],
             "ingredients": [
+                "tomate",
+                "beurre",
                 "farine",
-                "poivre",
-                "champignon",
-                "creme_fraiche",
-                "jaune_oeuf",
-                "veau",
-                "vin_blanc",
-                "carotte",
-                "bouillon_boeuf",
-                "oignon"                
+                "patate",
+                "oignon",
+                "boeuf_hache",
+                "fromage_rape",
+                "ail",
+                "oeuf"            
             ],
-            "description": "Un dessert de nuage gourmand",
+            "description": "Plat d'hiver qui tient au corp, perso je préfère avec du canard.",
             "score": 200
         },
         {
             "possible_answers": [
-                "Ile flottante"
+                "Crumble",
+                "Crumble au pomme",
+                "Crumble aux pommes"
             ],
             "ingredients": [
-                "vanille",
+                "farine",
                 "sucre",
-                "oeuf",
-                "lait",
-                "amande",
-                "sel"
+                "beurre",
+                "cassonade",
+                "pomme",
+                "canelle"
             ],
-            "description": "Un dessert de nuage gourmand",
+            "description": "Dessert anglais crée durant la 2nd guerre mondiale à cause du rationnement.",
             "score": 150
         },
         {
             "possible_answers": [
-                "Chili con carne",
-                "Chili"
+                "Risotto",
+                "Risotto champignon",
+                "Risotto de champignon",
+                "Risotto aux champignons"
             ],
             "ingredients": [
-                "boeuf_hache",
+                "creme_fraiche",
+                "oignon",
+                "riz",
                 "persil",
-                "puree_de_tomate",
-                "haricot_rouge",
+                "champignon",
+                "ail",
+                "mascarpone",
+                "parmesan"
+            ],
+            "description": "Un de mes plats italien préféré, existe en variante poulet, chorizo, asperge, poireau, potiron ou encore fenouil.",
+            "score": 150
+        },
+        {
+            "possible_answers": [
+                "Boeuf bourguignon",
+                "Boeuf bourguignons"
+            ],
+            "ingredients": [
+                "beurre",
+                "farine",
                 "oignon",
                 "bouillon_boeuf",
-                "ail",
-                "cumin",
-                "chili_poudre"
+                "boeuf_filet",
+                "bacon",
+                "vin_rouge",
+                "champignon",
+                "laurier"
             ],
-            "description": "Le dernier que j'ai mangé ça s'est ... mal passé ... #chiasse",
-            "score": 150
+            "description": "Plat en sauce français qui peut parfois ressembler à une soupe de goudron.",
+            "score": 200
+        },
+        {
+            "possible_answers": [
+                "Quiche lorraine",
+                "Quiche"
+            ],
+            "ingredients": [
+                "creme_fraiche",
+                "lardon",
+                "pate_brise",
+                "muscade",
+                "oeuf",
+                "poivre"
+            ],
+            "description": "ROAT (Recette Of All Time) de Popo.",
+            "score": 200
+        },
+        {
+            "possible_answers": [
+                "Soupe de poisson",
+                "Soupe de poissons"
+            ],
+            "ingredients": [
+                "tomate",
+                "poireau",
+                "crevette",
+                "celeri",
+                "oignon",
+                "fromage_rape",
+                "ail",
+                "thym",
+                "poisson_blanc",
+                "laurier"
+            ],
+            "description": "Peut être confondu avec la bouillabaisse.",
+            "score": 350
+        },
+        {
+            "possible_answers": [
+                "Navarin d'agneau",
+                "Navarin"
+            ],
+            "ingredients": [
+                "carotte",
+                "oignon",
+                "huile_olive",
+                "persil",
+                "patate",
+                "agneau_epaule",
+                "ail",
+                "navet",
+                "thym",
+                "tomate"
+            ],
+            "description": "Son nom viendrait du navet ou d'une ville grecque.",
+            "score": 350
         },
         {
             "possible_answers": [
@@ -71,29 +148,49 @@
                 "fromage_rape",
                 "lasagne"
             ],
-            "description": "Plat italien typique et préféré de Tounch",
+            "description": "Plat italien typique et préféré de Tounch.",
             "score": 100
         },
         {
             "possible_answers": [
-                "Pate carbonara",
-                "Pates carbonara",
-                "Pate carbo",
-                "Pates carbo",
-                "Carbonara",
-                "Carbo"
+                "Choucroute",
+                "Choucroute d'alsace",
+                "Choucroute à l'alsacienne"
             ],
             "ingredients": [
-                "oeuf",
-                "farine",
-                "poitrine_porc",
-                "jaune_oeuf",
-                "pecorino",
-                "poivre",
-                "huile_olive"
+                "bacon",
+                "laurier",
+                "oignon",
+                "chou",
+                "ail",
+                "patate",
+                "saucisse",
+                "vin_blanc",
+                "poivre"
             ],
-            "description": "Personne n'est jamais d'accord sur les ingrédients exacts de cette recette",
-            "score": 250
+            "description": "Plat du nord de la France qui fait péter.",
+            "score": 150
+        },
+        {
+            "possible_answers": [
+                "Paella"
+            ],
+            "ingredients": [
+                "poivron_vert",
+                "tomate",
+                "oignon",
+                "poulet_blanc",
+                "riz",
+                "huile_olive",
+                "crevette",
+                "moule",
+                "calamar",
+                "chorizo",
+                "safran",
+                "ail"
+            ],
+            "description": "LE plat espagnol, idéal pour nourrir beaucoup de personnes.",
+            "score": 150
         }
     ]
 }

@@ -2,78 +2,188 @@
     "recipes": [
         {
             "possible_answers": [
-                "Ile flottante"
+                "Panacota",
+                "Panacotta",
+                "Panacotas",
+                "Panacottas"
             ],
             "ingredients": [
-                "vanille",
                 "sucre",
-                "oeuf",
+                "gelatine",
                 "lait",
-                "amande",
-                "sel"
+                "creme_fraiche",
+                "fruits_rouges",
+                "mascarpone"
             ],
-            "description": "Un dessert de nuage gourmand",
+            "description": "Dessert italien rafraichissant et gourmand.",
             "score": 150
         },
         {
             "possible_answers": [
-                "Chili con carne",
-                "Chili"
+                "Pot-au-feu",
+                "Pot au feu"
             ],
             "ingredients": [
-                "boeuf_hache",
-                "persil",
-                "puree_de_tomate",
-                "haricot_rouge",
-                "oignon",
-                "bouillon_boeuf",
-                "ail",
-                "cumin",
-                "chili_poudre"
-            ],
-            "description": "Le dernier que j'ai mangé ça s'est ... mal passé ... #chiasse",
-            "score": 150
-        },
-        {
-            "possible_answers": [
-                "Lasagne",
-                "Lasagne de boeuf"
-            ],
-            "ingredients": [
-                "boeuf_hache",
-                "puree_de_tomate",
-                "oignon",
+                "poireau",
+                "clous_girofle",
                 "carotte",
+                "oignon",
+                "boeuf_filet",
+                "poivre",
                 "ail",
-                "lait",
-                "vin_rouge",
-                "parmesan",
-                "fromage_rape",
-                "lasagne"
+                "celeri",
+                "os_moelle"
             ],
-            "description": "Plat italien typique et préféré de Tounch",
+            "description": "Askip celui de la grand-mère de Paul c'est un banger.",
             "score": 100
         },
         {
             "possible_answers": [
-                "Pate carbonara",
-                "Pates carbonara",
-                "Pate carbo",
-                "Pates carbo",
-                "Carbonara",
-                "Carbo"
+                "Riz au lait",
+                "Riz-au-lait",
+                "Riolé"
             ],
             "ingredients": [
-                "oeuf",
-                "farine",
-                "poitrine_porc",
-                "jaune_oeuf",
-                "pecorino",
-                "poivre",
-                "huile_olive"
+                "vanille",
+                "lait",
+                "sucre",
+                "citron",
+                "riz",
+                "orange"
             ],
-            "description": "Personne n'est jamais d'accord sur les ingrédients exacts de cette recette",
+            "description": "Un dessert, le daron kiff ça et moi aussi ...",
+            "score": 200
+        },
+        {
+            "possible_answers": [
+                "Tortilla",
+                "Tortillas",
+                "Tortilla de patata",
+                "Tortillas de patatas"
+            ],
+            "ingredients": [
+                "oignon",
+                "lardon",
+                "poivron_vert",
+                "oeuf",
+                "patate",
+                "piment",
+                "sel",
+                "poivre"
+            ],
+            "description": "Plat espagnol, simple et efficace, bien lourd qui tient au corp sa mère, pas étonnant qu'ils soient tous gros dans ce pays.",
             "score": 250
+        },
+        {
+            "possible_answers": [
+                "Brownie",
+                "Brownies"
+            ],
+            "ingredients": [
+                "chocolat",
+                "oeuf",
+                "vanille",
+                "sucre",
+                "farine",
+                "beurre"
+            ],
+            "description": "Dessert américain dont Tounch raffole, s'agrémente souvent de noix ou noisette pour ajouter un petit côté gourmand croquant.",
+            "score": 300
+        },
+        {
+            "possible_answers": [
+                "Cordon bleu",
+                "Cordons bleu",
+                "Cordon bleus",
+                "Cordons bleus"
+            ],
+            "ingredients": [
+                "farine",
+                "bacon",
+                "oeuf",
+                "toastinette",
+                "farine",
+                "poulet_blanc",
+                "chapelure"
+            ],
+            "description": "Ex ROAT (Recette Of All Time) de Popo, maintenant elle préfère la quiche lorraine de Carrefour market.",
+            "score": 150
+        },
+        {
+            "possible_answers": [
+                "Brandade morue",
+                "Brandade de morue"
+            ],
+            "ingredients": [
+                "huile_olive",
+                "patate",
+                "poivre",
+                "morue",
+                "ail",
+                "persil"
+            ],
+            "description": "Grand classique portugais.",
+            "score": 250
+        },
+        {
+            "possible_answers": [
+                "Taboulé",
+                "Tabouleh",
+                "Taboulet"
+            ],
+            "ingredients": [
+                "tomate",
+                "poivron_jaune",
+                "huile_olive",
+                "persil",
+                "oignon",
+                "semoule",
+                "citron",
+                "menthe",
+                "raisin_sec"
+            ],
+            "description": "Excellent à déguster en été, beaucoup de variante de recette mais globalement ça vient du Liban.",
+            "score": 150
+        },
+        {
+            "possible_answers": [
+                "Ratatouille",
+                "Ratatouilles"
+            ],
+            "ingredients": [
+                "aubergine",
+                "courgette",
+                "tomate",
+                "huile_olive",
+                "oignon",
+                "poivron_jaune",
+                "poivron_vert",
+                "ail",
+                "laurier",
+                "thym"
+            ],
+            "description": "Classique de la cuisine française et plat signature de Rémi.",
+            "score": 250
+        },
+        {
+            "possible_answers": [
+                "Poulet basquaise",
+                "Poulet à la basquaise",
+                "Poulet à la basque"
+            ],
+            "ingredients": [
+                "tomate",
+                "poivron_jaune",
+                "huile_olive",
+                "poivron_vert",
+                "poulet_entier",
+                "thym",
+                "ail",
+                "vin_blanc",
+                "laurier"
+            ],
+            "description": "Originaire du Pays basque con.",
+            "score": 200
         }
     ]
 }
