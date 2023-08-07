@@ -6,15 +6,16 @@ var recipeDescription;
 var recipeScore;
 var gamePool;
 var username;
+var gameType;
 var score = 1000;
 var x = 0;
 
 
 
 function loadGame(x, imageToHide, gamePool) {
-    document.getElementById("quizz_name").innerHTML = "#" + recipeNumber + "/10 Recipe quizz";
+    document.getElementById("quizz_name").innerHTML = "#" + recipeNumber + "/10 "+gameType.charAt(0).toUpperCase() + gameType.slice(1)+" quizz";
     
-    $.getJSON("datafile/recipes/"+gamePool+".json", function (data) {
+    $.getJSON("datafile/"+gameType+"/"+gamePool+".json", function (data) {
         jsonImages = data.recipes[x].ingredients;
         recipeAnswer = data.recipes[x].possible_answers;
         recipeDescription = data.recipes[x].description;
@@ -23,8 +24,13 @@ function loadGame(x, imageToHide, gamePool) {
         imageToLoad = jsonImages.length - imageToHide;
         imageEmpty = jsonImages.length - imageToLoad;
 
-        document.getElementById("question").innerHTML = "Quelle est cette recette ? (" + recipeScore + "pts)";
-
+        if (gameType == "recipe") {
+            document.getElementById("question").innerHTML = "Quelle est cette recette ? (" + recipeScore + "pts)";
+        }
+        else {
+            document.getElementById("question").innerHTML = "Quel est ce film ? (" + recipeScore + "pts)";
+        }
+        
         for (let y = 0; y < imageToLoad; y++) {
             let img = document.createElement('img');
             img.setAttribute("class", "img");
@@ -122,7 +128,7 @@ async function nextQuestion(victory) {
     document.getElementById('revealed_answer').innerHTML = "";
     x++;
 
-    if (x == 10) {
+    if (x == 1) {
         console.log("End of the game");
         getToScorePage(score);
     }
@@ -193,7 +199,7 @@ function cleanString(string) {
 }
 
 function getToScorePage(score) {
-    window.location.href = "./highscore.html?score="+score+"&username="+username;
+    window.location.href = "./highscore.html?gametype="+gameType+"&score="+score+"&username="+username;
 }
 
 
@@ -205,6 +211,7 @@ function main() {
     const urlParams = new URLSearchParams(queryString);
     gamePool = urlParams.get('pool');
     username = urlParams.get('username');
+    gameType = urlParams.get('gametype');
 
     loadGame(0, imageToHide, gamePool);
 }

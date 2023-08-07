@@ -1,4 +1,4 @@
-function appendHighscore(username, score) {
+function appendHighscore(username, game, score) {
 
     const { writeFile, readFile } = require('fs');
     const path = './static/datafile/highscore.json';
@@ -10,9 +10,9 @@ function appendHighscore(username, score) {
         }
 
         const parsedData = JSON.parse(data);
-        entry = JSON.parse('{"username": "'+username+'", "score": "'+score+'"}');
+        entry = JSON.parse('{"username": "'+username+'","gameType": "'+game+'","score": "'+score+'"}');
 
-        parsedData.recipe.push(entry);
+        parsedData.game.push(entry);
         
         writeFile(path, JSON.stringify(parsedData, null, 4), (err) => {
             if (err) {

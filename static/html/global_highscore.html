@@ -15,6 +15,7 @@
         <table id="highscore_table">
             <tr>
                 <th class="global_highscore" id="global_highscore">Username</th>
+                <th class="global_highscore" id="global_highscore">Game</th>
                 <th class="global_highscore" id="global_highscore">Score</th>
             </tr>
         </table>
@@ -29,15 +30,20 @@
 
                 let tdUsername = document.createElement('td');
                 tdUsername.setAttribute("id", "global_highscore_username_"+i);
+                let tdGame = document.createElement('td');
+                tdGame.setAttribute("id", "global_highscore_game_"+i);
                 let tdScore = document.createElement('td');
                 tdScore.setAttribute("id", "global_highscore_score_"+i);
                 document.getElementById('global_highscore_row_'+i).appendChild(tdUsername);
+                document.getElementById('global_highscore_row_'+i).appendChild(tdGame);
                 document.getElementById('global_highscore_row_'+i).appendChild(tdScore);
 
-                let username = data.recipe[i].username;
-                let score = data.recipe[i].score;
+                let username = data.game[i].username;
+                let gameType = data.game[i].gameType;
+                let score = data.game[i].score;
 
                 document.getElementById("global_highscore_username_"+i).innerHTML = username;
+                document.getElementById("global_highscore_game_"+i).innerHTML = gameType;
                 document.getElementById("global_highscore_score_"+i).innerHTML = score;
             }
         });

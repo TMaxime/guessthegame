@@ -258,6 +258,8 @@ body {
     background-size: cover;
     background-image: url('images/movie.jpg');
     opacity: 0.9;
+    position: absolute;
+    left: 15%;
 }
 
 .movie_Button:hover {
@@ -275,7 +277,6 @@ body {
     box-sizing: border-box;
     color: #fff;
     cursor: pointer;
-    display: inline-block;
     font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
     font-size: 14px;
     font-weight: 600;
@@ -289,10 +290,38 @@ body {
     -webkit-user-select: none;
     touch-action: manipulation;
     vertical-align: middle;
-    white-space: nowrap;   
+    white-space: nowrap;
 }
 
 .recipe_sub_button:hover {
+    background-color: #c9696e;
+}
+
+
+.movie_sub_button {
+    background-color: #1f1919;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 60px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 10px 6px;
+    margin: 1%;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.movie_sub_button:hover {
     background-color: #c9696e;
 }
 

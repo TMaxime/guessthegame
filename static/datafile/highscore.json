@@ -1,16 +1,14 @@
 {
-    "recipe": [
-        {
-            "username": "bob",
-            "score": "100"
-        },
+    "game": [
         {
             "username": "max",
-            "score": "120"
+            "gameType": "recipe",
+            "score": "1000"
         },
         {
-            "username": "maxou",
-            "score": "1200"
+            "username": "anonymous",
+            "gameType": "movie",
+            "score": "1000"
         }
     ]
 }
