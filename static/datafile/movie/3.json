@@ -1,0 +1,22 @@
+{
+    "recipes": [
+        {
+            "possible_answers": [
+                "Le parrain",
+                "Parrain",
+                "Le parrain 1"
+            ],
+            "ingredients": [
+                "marlon_brando",
+                "robert_duval",
+                "diane_keaton",
+                "al_pacino",
+                "james_caan",
+                "robert_castellano",
+                "john_cazalle"
+            ],
+            "description": "Famille sicilienne qu'il ne vaut mieux pas emmerder",
+            "score": 150
+        }
+    ]
+}

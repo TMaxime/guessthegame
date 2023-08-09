@@ -1,0 +1,21 @@
+{
+    "recipes": [
+        {
+            "possible_answers": [
+                "La ligne verte",
+                "Ligne verte"
+            ],
+            "ingredients": [
+                "tom_hanks",
+                "david_morse",
+                "bonnie_hunt",
+                "michael_duncan",
+                "gary_sinise",
+                "doug_hutchison",
+                "michael_jeter"
+            ],
+            "description": "Film expliquant en quoi la chaise électrique c'est pas ouf",
+            "score": 150
+        }
+    ]
+}

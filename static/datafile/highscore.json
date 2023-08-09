@@ -9,6 +9,21 @@
             "username": "anonymous",
             "gameType": "movie",
             "score": "1000"
+        },
+        {
+            "username": "anonymous",
+            "gameType": "movie",
+            "score": "900"
+        },
+        {
+            "username": "anonymous",
+            "gameType": "movie",
+            "score": "900"
+        },
+        {
+            "username": "anonymous",
+            "gameType": "movie",
+            "score": "900"
         }
     ]
 }

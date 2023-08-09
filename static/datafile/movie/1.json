@@ -2,17 +2,17 @@
     "recipes": [
         {
             "possible_answers": [
-                "Film"
+                "Forrest gump"
             ],
             "ingredients": [
-                "mascarpone",
-                "mascarpone",
-                "mascarpone",
-                "mascarpone",
-                "mascarpone",
-                "mascarpone"
+                "tom_hanks",
+                "gary_sinise",
+                "robin_wright",
+                "mykelti_williamson",
+                "sally_field",
+                "dick_cavett"
             ],
-            "description": "C'est un film",
+            "description": "Un mec qui apprend à courir",
             "score": 150
         }
     ]
