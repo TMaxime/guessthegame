@@ -17,6 +17,157 @@
             ],
             "description": "Famille sicilienne qu'il ne vaut mieux pas emmerder",
             "score": 150
+        },
+        {
+            "possible_answers": [
+                "Black Swan",
+                "Le cigne noir"
+            ],
+            "ingredients": [
+                "natalie_portman",
+                "mila_kunis",
+                "vincent_cassel",
+                "barbara_hershey",
+                "winona_ryder",
+                "benjamin_millepied",
+                "barbara_hershey"
+            ],
+            "description": "Ballet entre le noir et le blanc",
+            "score": 200
+        },
+        {
+            "possible_answers": [
+                "No country for old men"
+            ],
+            "ingredients": [
+                "tommy_lee_jones",
+                "javier_bardem",
+                "josh_brolin",
+                "woody_harrelson",
+                "kelly_mac_donald",
+                "garret_dillahunt"
+            ],
+            "description": "À la frontière qui sépare le Texas du Mexique, les trafiquants de drogue ont depuis longtemps remplacé les voleurs de bétail. Lorsque Llewelyn Moss tombe sur une camionnette abandonnée, cernée de cadavres ensanglantés, il ne sait rien de ce qui a conduit à ce drame. Et quand il prend les deux millions de dollars qu'il découvre à l'intérieur du véhicule, il n'a pas la moindre idée de ce que cela va provoquer...Moss a déclenché une réaction en chaîne d'une violence inouïe que le shérif Bell, un homme vieillissant et sans illusions, ne parviendra pas à contenir...",
+            "score": 250
+        },
+        {
+            "possible_answers": [
+                "Le fabuleux destin d'Amélie Poulain",
+                "Amélie Poulain",
+                "Le fabuleux destin"
+            ],
+            "ingredients": [
+                "jamel_debbouze",
+                "rufus",
+                "mathieu_kassovitz",
+                "audrey_tautou",
+                "lorella_cravotta",
+                "dominique_pinon",
+                "isabelle_nanty"
+            ],
+            "description": "Tu savais que la famille d'Audrey Tautou habite en Corrèze ? J'te jure juste à côté de chez mes parents !!",
+            "score": 200
+        },
+        {
+            "possible_answers": [
+                "Astérix et Obélix mission Cléopatre",
+                "Astérix et Obélix",
+                "Mission Cléopatre",
+                "Astérix mission Cléopatre"
+            ],
+            "ingredients": [
+                "gerard_depardieu",
+                "claude_rich",
+                "monica_bellucci",
+                "jamel_debbouze",
+                "christian_clavier",
+                "alain_chabat",
+                "gerard_darmon",
+                "isabelle_nanty"
+            ],
+            "description": "Classique des classiques du cinéma français",
+            "score": 150
+        },
+        {
+            "possible_answers": [
+                "300",
+                "Trois cent"
+            ],
+            "ingredients": [
+                "gerard_butler",
+                "lena_headey",
+                "dominic_west",
+                "david_wenham",
+                "rodrigo_santoro",
+                "michael_fassbender"
+            ],
+            "description": "This is Sparta!",
+            "score": 150
+        },
+        {
+            "possible_answers": [
+                "Seven",
+                "7"
+            ],
+            "ingredients": [
+                "morgan_freeman",
+                "brad_pitt",
+                "gwyneth_paltrow",
+                "kevin_spacey",
+                "r_lee_ermey",
+                "john_cassini"
+            ],
+            "description": "Les sept péchés capitaux",
+            "score": 200
+        },
+        {
+            "possible_answers": [
+                "Edward au mains d'argent",
+                "Edward",
+                "Mains d'argent"
+            ],
+            "ingredients": [
+                "winona_ryder",
+                "johnny_depp",
+                "dianne_wiest",
+                "anthony_michael_hall",
+                "robert_oliveri",
+                "kathy_baker"
+            ],
+            "description": "L'histoire d'un jeune jardinier paysagiste",
+            "score": 200
+        },
+        {
+            "possible_answers": [
+                "Austin Powers - Goldmember",
+                "Austin Powers"
+            ],
+            "ingredients": [
+                "mike_myers",
+                "mike_myers",
+                "mike_myers",
+                "mike_myers",
+                "verne_troyer",
+                "beyonce"
+            ],
+            "description": "Film légendaire",
+            "score": 200
+        },
+        {
+            "possible_answers": [
+                "Prisoners"
+            ],
+            "ingredients": [
+                "hugh_jackman",
+                "viola_davis",
+                "jake_gyllenhaal",
+                "maria_bello",
+                "terrence_howard",
+                "melissa_leo",
+                "paul_dano"
+            ],
+            "description": "Un film pour les pères de famille",
+            "score": 250
         }
     ]
 }

@@ -14,6 +14,161 @@
             ],
             "description": "Un mec qui apprend à courir",
             "score": 150
+        },
+        {
+            "possible_answers": [
+                "Parasite",
+                "Parasites"
+            ],
+            "ingredients": [
+                "song_kang_ho",
+                "lee_sun_kyun",
+                "cho_yeo_jeong",
+                "choi_woo_sik",
+                "park_so_dam",
+                "jang_hye_jin"
+            ],
+            "description": "Le tenia des temps modernes",
+            "score": 200
+        },
+        {
+            "possible_answers": [
+                "Joker",
+                "Le joker"
+            ],
+            "ingredients": [
+                "joaquin_phoenix",
+                "leigh_gill",
+                "shea_whigham",
+                "zazie_beetz",
+                "robert_de_niro",
+                "frances_conroy",
+                "brett_cullen"
+            ],
+            "description": "Ancêtre de Max Zander",
+            "score": 200
+        },
+        {
+            "possible_answers": [
+                "Once upon a time... in Hollywood",
+                "Once upon a time in Hollywood",
+                "Once upon a time"
+            ],
+            "ingredients": [
+                "emile_hirsch",
+                "leonardo_di_caprio",
+                "austin_butler",
+                "margot_robbie",
+                "timothy_olyphant",
+                "brad_pitt",
+                "julia_butters",
+                "margaret_qualley",
+                "dakota_fanning",
+                "bruce_dern"
+            ],
+            "description": "C'est long et ça se branle pas mal mais c'est ok tier",
+            "score": 200
+        },
+        {
+            "possible_answers": [
+                "Le chant du loup"
+            ],
+            "ingredients": [
+                "francois_civil",
+                "mathieu_kassovitz",
+                "omar_sy",
+                "alexis_michalik",
+                "reda_kateb",
+                "paula_beer",
+                "damien_bonnard"
+            ],
+            "description": "Booof ... J'sais pas trop quoi dire, ça sent le film français à la con qui essaie de se la jouer dramatique ... Et c'est sous l'eau",
+            "score": 250
+        },
+        {
+            "possible_answers": [
+                "Avengers",
+                "Avengers Endgame",
+                "The Avengers"
+            ],
+            "ingredients": [
+                "robert_downey_jr",
+                "chris_evans",
+                "bradley_cooper",
+                "paul_rudd",
+                "brie_larson",
+                "mark_ruffalo",
+                "chris_hemsworth",
+                "scarlett_johansson",
+                "jeremy_renner"
+            ],
+            "description": "LE blockbuster américain des années 2010",
+            "score": 200
+        },
+        {
+            "possible_answers": [
+                "Toy Story 4",
+                "Toy Story"
+            ],
+            "ingredients": [
+                "tim_allen",
+                "tom_hanks",
+                "wallace_shawn",
+                "keanu_reeves",
+                "christina_hendricks",
+                "annie_potts",
+                "joan_cusack"
+            ],
+            "description": "Un classique de Pixar",
+            "score": 400
+        },
+        {
+            "possible_answers": [
+                "1917"
+            ],
+            "ingredients": [
+                "colin_firth",
+                "benedict_cumberbatch",
+                "george_mac_kay",
+                "dean_charles_chapman",
+                "andrew_scott",
+                "richard_madden",
+                "mark_strong"
+            ],
+            "description": "Plan séquence de guerre",
+            "score": 250
+        },
+        {
+            "possible_answers": [
+                "Logan",
+                "Wolverine"
+            ],
+            "ingredients": [
+                "hugh_jackman",
+                "dafne_keen",
+                "patrick_stewart",
+                "stephen_merchant",
+                "elizabeth_rodriguez",
+                "boyd_holbrook"
+            ],
+            "description": "Des pouvoirs, des explosions, des grands méchants, des gros muscles ...",
+            "score": 300
+        },
+        {
+            "possible_answers": [
+                "Au revoir là-haut",
+                "Au revoir la haut"
+            ],
+            "ingredients": [
+                "nahuel_perez_biscayart",
+                "laurent_lafitte",
+                "niels_arestrup",
+                "albert_dupontel",
+                "heloise_balster",
+                "philippe_uchan"
+            ],
+            "description": "L'histoire d'une gueule cassée",
+            "score": 250
         }
     ]
 }

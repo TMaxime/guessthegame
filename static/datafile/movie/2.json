@@ -16,6 +16,158 @@
             ],
             "description": "Film expliquant en quoi la chaise électrique c'est pas ouf",
             "score": 150
+        },
+        {
+            "possible_answers": [
+                "Ca",
+                "It"
+            ],
+            "ingredients": [
+                "bill_skarsgard",
+                "finn_wolfhard",
+                "jaeden_martell",
+                "wyatt_oleff",
+                "chosen_jacobs",
+                "sophia_lillis"
+            ],
+            "description": "Un titre en 2 lettres",
+            "score": 250
+        },
+        {
+            "possible_answers": [
+                "Pulp fiction"
+            ],
+            "ingredients": [
+                "tim_roth",
+                "samuel_l_jackson",
+                "harvey_keitel",
+                "uma_thurman",
+                "john_travolta",
+                "bruce_willis",
+                "amanda_plummer",
+                "ving_rhames"
+            ],
+            "description": "Un casting qui sent bon le Tarantino",
+            "score": 250
+        },
+        {
+            "possible_answers": [
+                "Rogue One: A Star Wars story",
+                "Rogue One",
+                "Star Wars Rogue One"
+            ],
+            "ingredients": [
+                "mads_mikkelsen",
+                "felicity_jones",
+                "diego_luna",
+                "ben_mendelsohn",
+                "donnie_yen",
+                "riz_ahmed",
+                "jiang_wen"
+            ],
+            "description": "Pont entre deux trilogie",
+            "score": 300
+        },
+        {
+            "possible_answers": [
+                "Mad Max - Fury Road",
+                "Mad Max Fury Road",
+                "Mad Max 3",
+                "Mad Max"
+            ],
+            "ingredients": [
+                "nathan_jones",
+                "charlize_theron",
+                "hugh_keays_byrne",
+                "tom_hardy",
+                "nicholas_hoult",
+                "rosie_huntington_whiteley",
+                "zoe_kravitz"
+            ],
+            "description": "Un otage, une citadelle et un aller retour dans une tempête de sable",
+            "score": 200
+        },
+        {
+            "possible_answers": [
+                "James Bond - Spectre",
+                "James Bond",
+                "007",
+                "Spectre"
+            ],
+            "ingredients": [
+                "daniel_craig",
+                "lea_seydoux",
+                "andrew_scott",
+                "christoph_waltz",
+                "ralph_fiennes",
+                "dave_bautista",
+                "monica_bellucci"
+            ],
+            "description": "Classique des films d'espionnage",
+            "score": 150
+        },
+        {
+            "possible_answers": [
+                "Interstellar"
+            ],
+            "ingredients": [
+                "matthew_mc_conaughey",
+                "matt_damon",
+                "anne_hathaway",
+                "jessica_chastain",
+                "mackenzie_foy",
+                "john_lithgow",
+                "michael_caine"
+            ],
+            "description": "Banger de l'espace",
+            "score": 150
+        },
+        {
+            "possible_answers": [
+                "Whiplash"
+            ],
+            "ingredients": [
+                "j_k_simmons",
+                "melissa_benoist",
+                "miles_teller",
+                "paul_reiser",
+                "austin_stowell",
+                "nate_lang"
+            ],
+            "description": "Un batteur et un batard",
+            "score": 200
+        },
+        {
+            "possible_answers": [
+                "World War Z"
+            ],
+            "ingredients": [
+                "brad_pitt",
+                "david_morse",
+                "mireille_enos",
+                "daniella_kertesz",
+                "james_badge_dale",
+                "matthew_fox"
+            ],
+            "description": "Prélude au Covid-19",
+            "score": 250
+        },
+        {
+            "possible_answers": [
+                "The Social Network",
+                "Social Network",
+                "Facebook"
+            ],
+            "ingredients": [
+                "andrew_garfield",
+                "justin_timberlake",
+                "jesse_eisenberg",
+                "armie_hammer",
+                "rooney_mara",
+                "bryan_barter"
+            ],
+            "description": "Success story d'un jeune entrepreneur",
+            "score": 200
         }
     ]
 }
